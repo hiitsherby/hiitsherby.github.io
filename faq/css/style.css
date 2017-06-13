@@ -15,9 +15,9 @@ Primary style
 
 body {
   font-size: 100%;
-  font-family: Arial;
-  color: #4e5359;
-  background-color: #f3f3f5;
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  color: #a9c056;
+  background-color: #a9c056;
 }
 body::after {
   /* overlay layer visible on small devices when the right panel slides in */
@@ -210,7 +210,7 @@ header h1 {
   width: 90%;
   top: 0;
   right: 0;
-  background: #ffffff;
+  background: rgba(255, 255, 255, 0.7);
   padding: 0 5% 1em;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
@@ -357,7 +357,7 @@ header h1 {
     display: block;
   }
   .cd-faq-group > li {
-    background: #ffffff;
+    background: rgba(255, 255, 255, 0.5);
     margin-bottom: 6px;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
     -webkit-transition: box-shadow 0.2s;
@@ -365,7 +365,7 @@ header h1 {
     transition: box-shadow 0.2s;
   }
   .no-touch .cd-faq-group > li:hover {
-    box-shadow: 0 1px 10px rgba(108, 125, 142, 0.3);
+    box-shadow: 0 1px 10px white;
   }
   .cd-faq-group .cd-faq-title {
     margin: 2em 0 1em;
@@ -380,6 +380,7 @@ header h1 {
   display: block;
   margin: 1.6em 0 .4em;
   line-height: 1.2;
+  color:white;
 }
 @media only screen and (min-width: 768px) {
   .cd-faq-trigger {
