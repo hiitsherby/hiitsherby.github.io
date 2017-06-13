@@ -455,3 +455,6 @@ header h1 {
     display: block;
   }
 }
+
+*{	text-decoration: none;
+}

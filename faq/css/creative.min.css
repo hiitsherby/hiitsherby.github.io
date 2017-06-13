@@ -4,6 +4,8 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 
+*{	text-decoration: none;
+}
 .navbar-default,
 a {
     -webkit-transition: all .35s;
@@ -479,4 +481,7 @@ img::-moz-selection {
 /* back, initially hidden pane */
 .back {
 	transform: rotateY(180deg);
+}
+
+*{	text-decoration: none;
 }
