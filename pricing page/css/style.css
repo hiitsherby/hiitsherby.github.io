@@ -5,10 +5,10 @@
  * Distributed under the terms of the MIT license
  * https://opensource.org/licenses/MIT
  */
-.wrapper {
+.wrappy {
   top: 50%;
   left: 50%;
-  margin-left:200px;
+  margin-left:100px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   color: #9f9f9f;
@@ -27,7 +27,8 @@
   -webkit-transition: margin-top 0.5s linear;
   transition: margin-top 0.5s linear;
   position: relative;
-  margin-right: 11px;
+  margin-right: 80px;
+  margin-top: 70px;
 }
 .package:hover {
   margin-top: -30px;
