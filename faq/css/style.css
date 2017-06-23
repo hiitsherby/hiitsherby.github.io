@@ -48,10 +48,13 @@ body.cd-overlay::after {
 
 a {
   color: #a9c056;
+  font-family:'Open Sans'
 }
 
 a:hover {
-    background-color: #a9c056;
+    background-color: white, 0.99;
+    text-decoration:none;
+    
 }
 
 
@@ -160,7 +163,7 @@ header h1 {
     display: none;
   }
   .no-touch .cd-faq-categories a:hover {
-    background: #555b61;
+    background: #42464b;
   }
   .no-js .cd-faq-categories {
     width: 100%;
@@ -380,8 +383,12 @@ header h1 {
   display: block;
   margin: 1.6em 0 .4em;
   line-height: 1.2;
-  color:white;
+  color:#5c5c5c;
+  font-family:'Futura';
+    text-transform: uppercase;
 }
+
+
 @media only screen and (min-width: 768px) {
   .cd-faq-trigger {
     font-size: 30px;
@@ -442,7 +449,8 @@ header h1 {
   font-size: 30px;
   font-size: 1.5rem;
   line-height: 1.4;
-  color: #6c7d8e;
+  color: white;
+  
 }
 @media only screen and (min-width: 768px) {
   .cd-faq-content {

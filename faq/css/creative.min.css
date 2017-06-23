@@ -47,13 +47,18 @@ hr.light {
 }
 a {
     transition: all .35s;
-    color: #a9c056
+    color: #a9c056;
+    font-family:'Open Sans';
+    
+    
 }
 a:focus,
 a:hover {
-    color: #a9c056
+    color: white;
+    text-decoration:none
+    
 }
-p {
+p { font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif
     font-size: 16px;
     line-height: 1.5;
     margin-bottom: 20px
