@@ -2593,6 +2593,7 @@
 		border: 0;
 		display: inline-block;
 		position: relative;
+		opacity:0.3;
 	}
 
 		.image img {

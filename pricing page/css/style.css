@@ -6,9 +6,8 @@
  * https://opensource.org/licenses/MIT
  */
 .wrappy {
-  top: 50%;
-  left: 50%;
-  margin-left:100px;
+  margin: 3%;
+  margin-left:5%;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   color: #9f9f9f;
@@ -27,8 +26,9 @@
   -webkit-transition: margin-top 0.5s linear;
   transition: margin-top 0.5s linear;
   position: relative;
-  margin-right: 80px;
-  margin-top: 70px;
+  margin-right: 3%;
+  margin-top: 5%;
+  margin-bottom: 5%
 }
 .package:hover {
   margin-top: -30px;

@@ -2476,14 +2476,14 @@
 
 	#banner {
 		background-image: url("../../images/banner.jpg");
-		background-position: center center;
+		background-position: absolute;
 		background-size: cover;
 		height: 100em;
 		text-align: center;
 		position: relative;
 	}
 
-		#banner header {
+		#banner header{
 			position: absolute;
 			bottom: 0;
 			left: 0;
@@ -2492,13 +2492,20 @@
 			background: rgba(27, 27, 27, 0.75);
 			color: #fff;
 			padding: 1.5em 0;
+			font-size: 16px;
+			font-family: 'Heiti TC';
 		}
 
+			
 			#banner header h2 {
 				display: inline-block;
 				margin: 0;
-				font-size: 1.25em;
 				vertical-align: middle;
+				font-family:'Open Sans';
+
+				  color: lightgrey;
+  font-weight: 300;
+  font-size: 110%;
 			}
 
 				#banner header h2 em {
@@ -2518,6 +2525,14 @@
 				margin-left: 1em;
 			}
 
+			#headtitle{
+				font-family:'Times New Roman';
+				font-size:25px;
+			}
+			#headtitle2{
+				font-family:'Heiti TC'
+				font-size:14px;
+			}
 /* Wrapper */
 
 	.wrapper {
@@ -2526,6 +2541,7 @@
 
 		.wrapper.style1 {
 			background: #fff;
+			padding: 10% 0;
 		}
 
 		.wrapper.style2 {
@@ -2534,6 +2550,7 @@
 			background-position: top left,						bottom left,					top left;
 			background-size: 100% 6em,						100% 6em,						auto;
 			background-repeat: no-repeat,						no-repeat,						repeat;
+			padding:10%;
 		}
 
 		.wrapper.style3 {
@@ -2626,8 +2643,9 @@
 		/* Banner */
 
 			#banner {
-				height: 100em;
+				height: 600px;
 			}
+
 
 	}
 
@@ -2832,7 +2850,7 @@
 				padding-top: 44px;
 			}
 
-			#titleBar {
+			/*#titleBar {
 				-moz-backface-visibility: hidden;
 				-webkit-backface-visibility: hidden;
 				-ms-backface-visibility: hidden;
@@ -2902,11 +2920,11 @@
 						opacity: 0.5;
 					}
 
-					#titleBar .toggle:active:before {
-						opacity: 0.75;
+					/*#titleBar .toggle:active:before {
+						opacity: 0.75;*/
 					}
 
-			#navPanel {
+			/*#navPanel {
 				background-color: #1f1f1f;
 				box-shadow: inset -1px 0 3px 0 rgba(0, 0, 0, 0.5);
 				background-image: -moz-linear-gradient(left, rgba(0,0,0,0) 75%, rgba(0,0,0,0.15)), url("images/bg01.png");
@@ -2986,18 +3004,18 @@
 				transform: translateX(275px);
 			}
 
-			body.navPanel-visible #titleBar {
+			/*body.navPanel-visible #titleBar {
 				-moz-transform: translateX(275px);
 				-webkit-transform: translateX(275px);
 				-ms-transform: translateX(275px);
-				transform: translateX(275px);
+				transform: translateX(275px);*/
 			}
 
-			body.navPanel-visible #navPanel {
+			/*body.navPanel-visible #navPanel {
 				-moz-transform: translateX(0);
 				-webkit-transform: translateX(0);
 				-ms-transform: translateX(0);
-				transform: translateX(0);
+				transform: translateX(0);*/
 			}
 
 	}
