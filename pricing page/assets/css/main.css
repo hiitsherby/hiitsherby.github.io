@@ -2537,11 +2537,11 @@
 
 	.wrapper {
 		padding: 5em 0 3em 0;
+					background: black;
 	}
 
 		.wrapper.style1 {
-			background: #fff;
-			padding: 10% 0;
+			background: black;
 		}
 
 		.wrapper.style2 {

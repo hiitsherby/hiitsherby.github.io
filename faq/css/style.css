@@ -3,6 +3,23 @@
 Primary style
 
 -------------------------------- */
+/*======  d3js style use  =======*/ 
+
+rect {
+  fill: none;
+  pointer-events: all;
+  z-index: 999;
+}
+
+circle {
+  fill: none;
+  stroke-width: 2.5px;
+   z-index: 999;
+}
+
+
+
+/*------------------------------------*/
 *, *::after, *::before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -145,6 +162,7 @@ header h1 {
 }
 @media only screen and (min-width: 768px) {
   .cd-faq-categories {
+    display:none;
     width: 20%;
     float: left;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
@@ -170,8 +188,9 @@ header h1 {
     margin-bottom: 2em;
   }
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1023px) {
   .cd-faq-categories {
+    display:none;
     position: absolute;
     top: 0;
     left: 0;
@@ -210,11 +229,12 @@ header h1 {
 .cd-faq-items {
   position: fixed;
   height: 100%;
-  width: 90%;
+  width: 100%;
   top: 0;
   right: 0;
   background: rgba(255, 255, 255, 0.7);
-  padding: 0 5% 1em;
+  padding: 10%;
+  padding-right:20%;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
   z-index: 1;
@@ -267,6 +287,7 @@ header h1 {
     float: none;
     width: 100%;
     padding-left: 220px;
+
   }
   .no-js .cd-faq-items {
     padding-left: 0;
@@ -332,6 +353,8 @@ header h1 {
 .cd-faq-group {
   /* hide group not selected */
   display: none;
+  margin-right: 30%;
+
 }
 .cd-faq-group.selected {
   display: block;
@@ -386,6 +409,7 @@ header h1 {
   color:#5c5c5c;
   font-family:'Futura';
     text-transform: uppercase;
+
 }
 
 

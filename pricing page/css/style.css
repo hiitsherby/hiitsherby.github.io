@@ -6,8 +6,8 @@
  * https://opensource.org/licenses/MIT
  */
 .wrappy {
-  margin: 3%;
-  margin-left:5%;
+  margin: 5%;
+  padding-left: 2%;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   color: #9f9f9f;

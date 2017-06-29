@@ -41,7 +41,7 @@
 
 </head>
 
-<body id="page-top" style="background-color:grey">
+<body id="page-top" style="background-color:#222">
 
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
@@ -79,11 +79,12 @@
     </nav>
 
     
-            <video playsinline autoplay muted loop id="bgvid">
+<!--            <video playsinline autoplay muted loop id="bgvid">
 
-        <source src="20824309.mp4" type="video/mp4">
+        <source src="particles.mp4" type="video/mp4">
+        your browser doesn't support html5 video.
 
-    </video>  
+    </video>  -->
 
 
 
@@ -366,6 +367,7 @@
 
     <!-- For googleMap use -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- Hide Video ---
 <script>
   $(function(){
     $('.gmap').click(function(){
@@ -374,6 +376,59 @@
     });
   });
 </script>
+<script>
+var vid = document.getElementById("bgvid");
+
+
+function setPlaySpeed() { 
+    vid.playbackRate = 0.7;
+}
+
+function setCurTime() { 
+    vid.currentTime=5;
+} 
+setPlaySpeed() 
+setCurTime()
+</script>   -->
+<!-- d3j USE -->
+<script src="/Users/apple/Desktop/d3.v3.min.js"></script>
+<script>
+
+var width = Math.max(100000, innerWidth),
+    height = Math.max(1000000, innerHeight);
+
+var i = 0;
+
+var svg = d3.select("body").append("svg")
+    .attr("width", width)
+    .attr("height", height);
+
+svg.append("rect")
+    .attr("width", width)
+    .attr("height", height)
+    .on("ontouchstart" in document ? "touchmove" : "mousemove", particle);
+
+function particle() {
+  var m = d3.mouse(this);
+
+  svg.insert("circle", "rect")
+      .attr("cx", m[0])
+      .attr("cy", m[1])
+      .attr("r", 1e-6)
+      .style("stroke", d3.hsl((i = (i + 1) % 360), 1, .5))
+      .style("stroke-opacity", 1)
+    .transition()
+      .duration(2000)
+      .ease(Math.sqrt)
+      .attr("r", 100)
+      .style("stroke-opacity", 1e-6)
+      .remove();
+
+  d3.event.preventDefault();
+}
+
+</script>
+
 </body>
 
 </html>

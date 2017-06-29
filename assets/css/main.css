@@ -2593,7 +2593,6 @@
 		border: 0;
 		display: inline-block;
 		position: relative;
-		opacity:0.3;
 	}
 
 		.image img {
@@ -3492,7 +3491,7 @@
 		@media screen and (max-width: 736px) {
 
 			#sidebar + #wrapper {
-				padding-top: 0;
+				padding-top: 3.5em;
 			}
 
 		}
@@ -3813,6 +3812,8 @@
 		}
 
 /*		@media screen and (max-width: 1280px) {
+
+	
 
 			#sidebar {
 				height: 3.5em;
